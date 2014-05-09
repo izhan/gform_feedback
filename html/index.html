@@ -1,53 +1,58 @@
-<!-- iFrame needed for preventing a redirect -->
-<iframe name="hidden_iframe" id="hidden_iframe"
-style="display:none;" onload="if(submitted)
-{feedbackFormSubmitted();}"></iframe>
-<!-- End iFrame -->
+<div id="feedback-form">
+  <a id="feedback-button">Tell us what you think.</a>
+  <div class="form">
+    <!-- iFrame needed for preventing a redirect -->
+    <iframe name="hidden_iframe" id="hidden_iframe"
+    style="display:none;" onload="if(submitted)
+    {feedbackFormSubmitted();}"></iframe>
+    <!-- End iFrame -->
 
-<!-- Place your form here -->
-<!-- Each entry is within a ss-form-question div -->
-<!-- Make sure you replace corresponding URLs and class/id names that begin with "REPLACE:" -->
-<form action="REPLACE: correct url" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
-  <ol role="list" class="ss-question-list" style="padding-left: 0">
-    <div class="ss-form-question errorbox-good" role="listitem">
-      <div dir="ltr" class="ss-item  ss-paragraph-text">
-        <div class="ss-form-entry">
-          <label class="ss-q-item-label" for="REPLACE: With Entry">
-            <div class="ss-q-title">Question 1
+    <!-- Place your form here -->
+    <!-- Each entry is within a ss-form-question div -->
+    <!-- Make sure you replace corresponding URLs and class/id names that begin with "REPLACE:" -->
+    <form action="REPLACE: correct url" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
+      <ol role="list" class="ss-question-list" style="padding-left: 0">
+        <div class="ss-form-question errorbox-good" role="listitem">
+          <div dir="ltr" class="ss-item  ss-paragraph-text">
+            <div class="ss-form-entry">
+              <label class="ss-q-item-label" for="REPLACE: With Entry">
+                <div class="ss-q-title">Question 1
+                </div>
+                <div class="ss-q-help ss-secondary-text" dir="ltr">
+                </div>
+              </label>
+              <textarea name="REPLACE: With Entry" rows="8" cols="0" class="ss-q-long" id="REPLACE: With Entry" dir="auto" aria-label="What were the favorite parts of your site?  "></textarea>
             </div>
-            <div class="ss-q-help ss-secondary-text" dir="ltr">
-            </div>
-          </label>
-          <textarea name="REPLACE: With Entry" rows="8" cols="0" class="ss-q-long" id="REPLACE: With Entry" dir="auto" aria-label="What were the favorite parts of your site?  "></textarea>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="ss-form-question errorbox-good" role="listitem">
-      <div dir="ltr" class="ss-item  ss-paragraph-text">
-        <div class="ss-form-entry">
-          <label class="ss-q-item-label" for="REPLACE: With Entry">
-            <div class="ss-q-title">Question 2
+        <div class="ss-form-question errorbox-good" role="listitem">
+          <div dir="ltr" class="ss-item  ss-paragraph-text">
+            <div class="ss-form-entry">
+              <label class="ss-q-item-label" for="REPLACE: With Entry">
+                <div class="ss-q-title">Question 2
+                </div>
+                <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+              </label>
+              <textarea name="REPLACE: With Entry" rows="8" cols="0" class="ss-q-long" id="REPLACE: With Entry" dir="auto" aria-label="How can we improve Thriftster?  "></textarea>
             </div>
-            <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-          </label>
-          <textarea name="REPLACE: With Entry" rows="8" cols="0" class="ss-q-long" id="REPLACE: With Entry" dir="auto" aria-label="How can we improve Thriftster?  "></textarea>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="ss-form-question errorbox-good" role="listitem">
-      <div dir="ltr" class="ss-item  ss-paragraph-text">
-        <div class="ss-form-entry">
-          <label class="ss-q-item-label" for="REPLACE: With Entry">
-            <div class="ss-q-title">Additional suggestions/comments/questions?
+        <div class="ss-form-question errorbox-good" role="listitem">
+          <div dir="ltr" class="ss-item  ss-paragraph-text">
+            <div class="ss-form-entry">
+              <label class="ss-q-item-label" for="REPLACE: With Entry">
+                <div class="ss-q-title">Additional suggestions/comments/questions?
+                </div>
+                <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+              </label>
+              <textarea name="REPLACE: With Entry" rows="8" cols="0" class="ss-q-long" id="REPLACE: With Entry" dir="auto" aria-label="Additional Questions/Comments?  "></textarea>
             </div>
-            <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-          </label>
-          <textarea name="REPLACE: With Entry" rows="8" cols="0" class="ss-q-long" id="REPLACE: With Entry" dir="auto" aria-label="Additional Questions/Comments?  "></textarea>
+          </div>
         </div>
-      </div>
-    </div>
-    <input type="submit" name="submit" value="Submit" class="btn btn-default" id="ss-submit">
-    <button class="btn btn-default" disabled=true id="ss-submit-disabled">Submitting, please wait...</button>
-  </ol>
-</form>
-<!-- end Form -->
+        <input type="submit" name="submit" value="Submit" class="btn btn-default" id="ss-submit">
+        <button class="btn btn-default" disabled=true id="ss-submit-disabled">Submitting, please wait...</button>
+      </ol>
+    </form>
+    <!-- end Form -->
+  </div>
+</div>
