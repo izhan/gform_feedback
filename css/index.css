@@ -1,0 +1,68 @@
+/* hack to disable submit button */
+#ss-submit-disabled {
+  display: none;
+}
+
+/* don't want feedback form to show up in mobile */
+@media (max-width: 576px) {
+  #feedback-form {
+    display: none!important;
+  }
+}
+
+/* inspired by: http://www.paulund.co.uk/how-to-build-a-slideout-feedback-form-in-jquery */
+#feedback-form {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 50px;
+  display: none;
+  z-index: 999;
+}
+#feedback-form a {
+  display:block;
+  text-align:center;
+  background:red;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding:5px;
+  float:right;
+  cursor:pointer;
+  width: 220px;
+  margin-right:25px;
+  background: #63a3c7;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  color:#FFF;
+  font-size: 15px;
+}
+#feedback-form a:hover {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+#feedback-form .form {
+  background: #fff;
+  clear:both;
+  width:450px;
+  padding: 20px 25px 5px 25px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top: 3px solid #00607b;
+  border-right: 3px solid #00607b;
+  border-left: 3px solid #00607b;
+  display: none;
+}
+#feedback-form .form textarea{
+  width: 100%;
+  height: 70px;
+}
+.ss-form-question {
+  margin-top: 5px;
+}
+#feedback-form .form input[type="text"]{
+  margin-left: 10px;
+  width: 200px;
+}
