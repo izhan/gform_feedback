@@ -2,7 +2,6 @@
 var submitted=false;
 function feedbackFormSubmitted() {
   submitted = false;
-  console.log("submitted");
   $('.form').slideToggle();
   $('#feedback-button').text("Thank you!");
 
@@ -20,7 +19,7 @@ function feedbackFormSubmitted() {
   $("#ss-submit-disabled").hide();
 }
 
-$( document ).ready(function() {
+$(document).ready(function() {
   // adding a nice delay
   setTimeout(function(){
     $('#feedback-form').slideDown(750);
